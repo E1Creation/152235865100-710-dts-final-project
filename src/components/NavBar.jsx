@@ -39,10 +39,7 @@ const NavBar = () => {
     logOut();
     // navigate("/login");
   };
-  const settings = [
-    { name: "Profile", fn: () => {}, href: "" },
-    { name: "Logout", fn: logOutHandler, href: "/login" },
-  ];
+  const settings = [{ name: "Logout", fn: logOutHandler, href: "/login" }];
   // const settings = ["Profile", "Logout"];
   const [anchorElNav, setAnchorElNav] = useState();
   const [anchorElUser, setAnchorElUser] = useState();
@@ -171,6 +168,8 @@ const NavBar = () => {
             ))}
           </Box>
           <input
+            className="input-search"
+            placeholder="search..."
             type={"search"}
             value={searchValue}
             onKeyPress={searchSubmitHandler}

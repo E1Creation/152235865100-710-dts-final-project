@@ -38,6 +38,10 @@
     transform: rotate(360deg);
   }
 }
+.input-search {
+  margin-right: 20px;
+  background-color: rgba(0,0,0,0.1);
+}
 .Footer{
   margin-top: 50vh;
 }

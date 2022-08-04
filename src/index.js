@@ -10,6 +10,7 @@ import { store } from "./app/store";
 import Login from "./containers/Login";
 import Register from "./containers/Register";
 import Search from "./containers/Search";
+import Detail from "./containers/Detail";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,6 +21,7 @@ root.render(
           <Route path="/" element={<App />}>
             <Route path="/" element={<Home />}></Route>
             <Route path="/search" element={<Search />}></Route>
+            <Route path="/detail/:dealID" element={<Detail />}></Route>
           </Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/register" element={<Register />}></Route>
